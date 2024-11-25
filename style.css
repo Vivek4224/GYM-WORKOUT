@@ -1,0 +1,96 @@
+/* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 30px;
+}
+
+button:hover {
+  background-color: #333;
+  border: 2px solid #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  text-transform: capitalize;
+  transition: 0.2s ease-in-out;
+}
+
+a:hover {
+  background-color: #333;
+  color: white;
+  border: 2px solid #fff;
+}
+.workout-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.workout-card,
+.exercise-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  width: 250px;
+  text-align: center;
+  padding: 20px;
+}
+
+.workout-card img,
+.exercise-card img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Styling for the exercise detail page */
+.exercise-detail {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 2rem;
+  padding: 20px;
+}
+
+.exercise-card {
+  width: 80%;
+  margin: 20px 0;
+  text-align: center;
+}
