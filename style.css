@@ -81,6 +81,12 @@ footer {
 }
 
 /* Styling for the exercise detail page */
+.exercise-main {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4rem;
+}
+
 .exercise-detail {
   display: flex;
   align-items: center;
