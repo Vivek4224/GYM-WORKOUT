@@ -64,6 +64,19 @@ a:hover {
   padding: 20px;
 }
 
+.workout-card {
+  background-color: #333; /* Updated to #333 */
+  color: white; /* Ensures text is visible against dark background */
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  width: 250px;
+  text-align: center;
+  padding: 20px;
+  cursor: pointer;
+}
+
+
 .workout-card img,
 .exercise-card img {
   max-width: 100%;
@@ -95,8 +108,14 @@ footer {
   padding: 20px;
 }
 
+/* Styling for the exercise cards */
 .exercise-card {
+  background-color: #333; /* Changed from white to #333 */
+  color: white; /* Ensures text is visible against dark background */
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  margin: 20px;
   width: 80%;
-  margin: 20px 0;
   text-align: center;
+  padding: 20px;
 }
