@@ -14,15 +14,18 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 h1 {
   margin: 0;
+  font-size: 1.5rem;
 }
 
 h2 {
   text-align: center;
   margin-top: 30px;
+  font-size: 2rem;
 }
 
 button:hover {
@@ -46,13 +49,82 @@ a:hover {
   color: white;
   border: 2px solid #fff;
 }
+
 .workout-section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 20px;
+  padding: 0px 20px 80px 20px;
 }
 
+/* Media Query for smaller devices */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  .workout-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .workout-card {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  footer {
+    padding: 10px;
+    font-size: 0.8rem;
+  }
+}
+
+/* Media Query for mobile devices (portrait view) */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .workout-section {
+    padding: 10px;
+  }
+
+  .workout-card {
+    width: 100%;
+  }
+
+  .exercise-main {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .exercise-card {
+    width: 100%;
+  }
+
+  .exercise-detail {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .exercise-card img {
+    width: 80%;
+  }
+}
+
+/* General Styling for workout cards */
 .workout-card,
 .exercise-card {
   background-color: white;
@@ -62,20 +134,13 @@ a:hover {
   width: 250px;
   text-align: center;
   padding: 20px;
+  cursor: pointer;
 }
 
 .workout-card {
   background-color: #333; /* Updated to #333 */
   color: white; /* Ensures text is visible against dark background */
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  margin: 20px;
-  width: 250px;
-  text-align: center;
-  padding: 20px;
-  cursor: pointer;
 }
-
 
 .workout-card img,
 .exercise-card img {
@@ -108,7 +173,6 @@ footer {
   padding: 20px;
 }
 
-/* Styling for the exercise cards */
 .exercise-card {
   background-color: #333; /* Changed from white to #333 */
   color: white; /* Ensures text is visible against dark background */
